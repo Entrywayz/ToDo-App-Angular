@@ -1,0 +1,17 @@
+<div class="input__outer">
+    <app-success #successComponent></app-success>
+    <input placeholder="Enter your task..." [(ngModel)]="newTask" (keyup.enter)="addTask()" />
+    <div class="btns__container">
+        <button (click)="addTask()">Add</button>
+    </div>
+    <div class="task__list">
+        <ul class="task-list">
+            <li class="task" *ngFor="let todoItem of todoList">
+                <span class="task__title">{{todoItem.title}}</span>
+                <div class="task__actions">
+                    <button (click)="completeTask(todoItem.id)" class="task__btn task__btn--complete">Complete</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

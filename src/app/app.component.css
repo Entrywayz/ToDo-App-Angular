@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.todo {
+    justify-content: center;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    font-size: 4rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 60px;
+    border: 2px solid #fff;
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 3px 3px 2px rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.todo:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.inp__container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
